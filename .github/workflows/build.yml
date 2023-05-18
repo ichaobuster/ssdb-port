@@ -24,4 +24,4 @@ jobs:
            go get github.com/seefan/goerr
 
       - name: Build
-        run: go build -v ./siphon
+        run: cd siphon && go build -v .
