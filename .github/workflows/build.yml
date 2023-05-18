@@ -14,7 +14,7 @@ jobs:
           go-version: '1.15'
 
       - name: Install dependencies
-         run: |
+        run: |
            go get github.com/thinkboy/log4go
            go get github.com/reborndb/go/log
            go get github.com/reborndb/go/errors
