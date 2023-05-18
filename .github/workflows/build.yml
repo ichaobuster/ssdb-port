@@ -32,4 +32,6 @@ jobs:
            go get cmdSync
 
       - name: Build
-        run: go build -v -o build/siphon ./siphon/main.go
+        run: |
+           cd siphon
+           go build -v ./
