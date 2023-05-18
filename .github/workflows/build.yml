@@ -18,8 +18,7 @@ jobs:
 
       - name: Mod init
         run: |
-           go mod init github.com/imneov/siphon/ssdb
-           go mod init github.com/imneov/siphon/siphon
+           go mod init github.com/imneov/siphon/ssdb github.com/imneov/siphon/siphon
 
       - name: Install dependencies
         run: |
