@@ -10,6 +10,7 @@ import (
 	"github.com/reborndb/go/errors"
 	"github.com/reborndb/go/log"
 	"fmt"
+	"cmdSync"
 	"encoding/binary"
 )
 
