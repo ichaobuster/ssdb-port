@@ -12,12 +12,10 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: '1.16.x'
-          
-      - name: go111module
-        run: go env -w GO111MODULE=off
 
       - name: Install dependencies
         run: |
+           cd ./siphon
            go get github.com/thinkboy/log4go
            go get github.com/reborndb/go/log
            go get github.com/reborndb/go/errors
