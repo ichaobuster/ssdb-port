@@ -29,7 +29,6 @@ jobs:
            go get github.com/garyburd/redigo/redis
            go get github.com/docopt/docopt-go
            go get github.com/seefan/goerr@v1.1.1
-           go get github.com/ichaobuster/ssdb-port/ssdb
 
       - name: Build
         run: |
