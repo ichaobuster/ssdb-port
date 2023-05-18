@@ -24,7 +24,7 @@ jobs:
            go get github.com/seefan/goerr@v1.1.1
 
       - name: GO111MODULE
-        run: go env -w GO111MODULE=auto
+        run: go env -w GO111MODULE=off
 
       - name: Build
         run: go build -v -o build/siphon ./siphon/main.go
