@@ -23,8 +23,5 @@ jobs:
            go get github.com/docopt/docopt-go
            go get github.com/seefan/goerr@v1.1.1
 
-      - name: Mod init
-        run: go mod init ./siphon/
-
       - name: Build
         run: go build -v -o build/siphon ./siphon/main.go
