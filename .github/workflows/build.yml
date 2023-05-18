@@ -18,7 +18,7 @@ jobs:
 
       - name: Mod init
         run: |
-           go mod init github.com/imneov/siphon/ssdb
+           go mod init github.com/imneov/siphon/siphon
 
       - name: Install dependencies
         run: |
@@ -28,7 +28,7 @@ jobs:
            go get github.com/reborndb/go/atomic2
            go get github.com/garyburd/redigo/redis
            go get github.com/docopt/docopt-go
-           go get github.com/seefan/goerr@v1.1.1
+           go get github.com/seefan/goerr@v1.1.0
 
       - name: Build ssdb
         run: |
