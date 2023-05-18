@@ -32,7 +32,7 @@ jobs:
 
       - name: Build ssdb
         run: |
-           go build github.com/imneov/siphon/ssdb
+           go get github.com/imneov/siphon/ssdb
       - name: Build siphon
         run: |
            go build github.com/imneov/siphon/siphon
