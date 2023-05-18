@@ -19,7 +19,6 @@ jobs:
            go get github.com/reborndb/go/log
            go get github.com/reborndb/go/errors
            go get github.com/reborndb/go/atomic2
-           go get github.com/imneov/siphon/ssdb
            go get github.com/garyburd/redigo/redis
            go get github.com/docopt/docopt-go
 
