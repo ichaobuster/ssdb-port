@@ -24,4 +24,4 @@ jobs:
           go get github.com/docopt/docopt-go
 
       - name: Build
-        run: go build -v ./siphon
+        run: go build -v github.com/imneov/siphon/siphon
