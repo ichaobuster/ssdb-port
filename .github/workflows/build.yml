@@ -25,7 +25,7 @@ jobs:
 
       - name: Mod init
         run: |
-           go mod init .
+           go mod init github.com/imneov/siphon/siphon
 
       - name: Build
         run: go build -v -o build/siphon ./siphon/main.go
