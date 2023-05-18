@@ -15,7 +15,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          go get .
           go get github.com/thinkboy/log4go
           go get github.com/reborndb/go/log
           go get github.com/reborndb/go/errors
