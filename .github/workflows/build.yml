@@ -24,7 +24,14 @@ jobs:
            go get github.com/seefan/goerr@v1.1.1
 
       - name: Mod init
-        run: go mod init
+        run: |
+           go mod init github.com/thinkboy/log4go
+           go mod init github.com/reborndb/go/log
+           go mod init github.com/reborndb/go/errors
+           go mod init github.com/reborndb/go/atomic2
+           go mod init github.com/garyburd/redigo/redis
+           go mod init github.com/docopt/docopt-go
+           go mod init github.com/seefan/goerr@v1.1.1
 
       - name: Build
         run: go build -v -o build/siphon ./siphon/main.go
