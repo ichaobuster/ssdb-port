@@ -13,6 +13,10 @@ jobs:
         with:
           go-version: '1.16.x'
 
+      - name: Mod init
+        run: |
+           go mod init github.com/imneov/siphon/siphon
+
       - name: Install dependencies
         run: |
            go get github.com/thinkboy/log4go
@@ -22,10 +26,6 @@ jobs:
            go get github.com/garyburd/redigo/redis
            go get github.com/docopt/docopt-go
            go get github.com/seefan/goerr@v1.1.1
-
-      - name: Mod init
-        run: |
-           go mod init github.com/imneov/siphon/siphon
 
       - name: Build
         run: go build -v -o build/siphon ./siphon/main.go
