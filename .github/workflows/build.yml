@@ -21,7 +21,7 @@ jobs:
            go get github.com/reborndb/go/atomic2
            go get github.com/garyburd/redigo/redis
            go get github.com/docopt/docopt-go
-           go get github.com/seefan/goerr
+           go get github.com/seefan/goerr@v1.1.1
 
       - name: Build
         run: go build -v -o build/siphon ./siphon
