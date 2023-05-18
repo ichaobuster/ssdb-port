@@ -28,9 +28,9 @@ jobs:
            go get github.com/reborndb/go/atomic2
            go get github.com/garyburd/redigo/redis
            go get github.com/docopt/docopt-go
-           go get github.com/seefan/goerr@v1.1.0
+           go get github.com/seefan/goerr@v1.0.0
 
-      - name: Build ssdb
+      - name: Install ssdb
         run: |
            go get github.com/imneov/siphon/ssdb
       - name: Build siphon
